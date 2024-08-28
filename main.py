@@ -11,7 +11,7 @@ import google.generativeai as genai
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 newsapi = "ENTER_YOUR_API_KEY"
-listening_for_command = False  # Add a flag to indicate when Jarvis should stop talking and start listening
+listening_for_command = False  # Add a flag to indicate when MAX should stop talking and start listening
 
 def speak(text):
     engine.say(text)
