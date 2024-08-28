@@ -1,10 +1,10 @@
-# Jarvis AI Assistant
+# MAX AI Assistant
 
-**Jarvis** is a Python-based AI assistant designed to help you with various tasks using voice commands. It can open websites, play music, fetch the latest news, provide the current time and date, and even chat with you using Google's Generative AI (Gemini).
+**MAX** is a Python-based AI assistant designed to help you with various tasks using voice commands. It can open websites, play music, fetch the latest news, provide the current time and date, and even chat with you using Google's Generative AI (Gemini).
 
 ## Features
 
-- **Voice Commands**: Control Jarvis using natural language.
+- **Voice Commands**: Control MAX using natural language.
 - **Web Browsing**: Open popular websites like Google, Facebook, YouTube, and more.
 - **Music Playback**: Play songs from a predefined music library.
 - **News Updates**: Get the latest headlines using the News API.
@@ -14,13 +14,15 @@
 ## Installation
 
 1. **Clone the repository**:
+
     ```bash
-    git clone https://github.com/yourusername/jarvis-ai-assistant.git
-    cd jarvis-ai-assistant
+    git clone https://github.com/yourusername/max-ai-assistant.git
+    cd max-ai-assistant
     ```
 
 2. **Install the required packages**:
     Make sure you have Python 3.7+ installed. Then, install the dependencies:
+
     ```bash
     pip install -r requirements.txt
     ```
@@ -28,18 +30,20 @@
 3. **Set up API keys**:
     - **News API**: Get your API key from [newsapi.org](https://newsapi.org/) and replace the placeholder in the code (`newsapi = "YOUR_API_KEY"`).
     - **Google Generative AI (Gemini)**: Set up your Gemini API key in your environment variables:
+
     ```bash
     export GEMINI_API_KEY="your_gemini_api_key"
     ```
 
-4. **Run Jarvis**:
+4. **Run MAX**:
+
     ```bash
-    python jarvis.py
+    python max.py
     ```
 
 ## Usage
 
-After running Jarvis, say "Jarvis" or "Hey Jarvis" to activate it, and then provide your command. Example commands include:
+After running MAX, say "MAX" or "Hey MAX" to activate it, and then provide your command. Example commands include:
 
 - "Good morning"
 - "Open Google"
@@ -48,38 +52,43 @@ After running Jarvis, say "Jarvis" or "Hey Jarvis" to activate it, and then prov
 - "What's the time?"
 - "Who are you?"
 
-Jarvis will process your command and respond either through predefined actions or by generating a response using Google Generative AI.
+MAX will process your command and respond either through predefined actions or by generating a response using Google Generative AI.
 
 ## Customization
 
 - **Music Library**: Modify `musicLibrary.py` to customize your music library with your preferred songs and their links.
-- **Commands**: Add or modify commands in the `processCommand` function to extend Jarvis's capabilities.
+- **Commands**: Add or modify commands in the `processCommand` function to extend MAX's capabilities.
 
 ## Pushing to GitHub
 
 To push this project to GitHub, follow these steps:
 
 1. **Initialize Git in your project directory**:
+
     ```bash
     git init
     ```
 
 2. **Add your files to the staging area**:
+
     ```bash
     git add .
     ```
 
 3. **Commit your changes**:
+
     ```bash
-    git commit -m "Initial commit of Jarvis AI Assistant project"
+    git commit -m "Initial commit of MAX AI Assistant project"
     ```
 
 4. **Add your remote repository**:
+
     ```bash
     git remote add origin https://github.com/yourusername/repository-name.git
     ```
 
 5. **Push your changes to GitHub**:
+
     ```bash
     git push -u origin main
     ```
@@ -100,4 +109,3 @@ Feel free to fork this repository, make improvements, and submit a pull request.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
