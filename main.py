@@ -88,7 +88,7 @@ def processCommand(command):
             speak("Please specify the song to play.")
 
     elif "news" in command:
-        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey={newsapi}")
+        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=in&apiKey={newsapi}")
         if r.status_code == 200:
             data = r.json()
             for article in data['articles']:
@@ -105,7 +105,7 @@ def processCommand(command):
         speak(f"Today is {today}")
 
     elif "who are you" in command or "what is your name" in command:
-        speak("I am Jarvis, your personal assistant.")
+        speak("I am MAX, your personal assistant.")
 
     elif "how r u" or "how are you"in command:
         speak("I'm just a program, but I'm here to assist you!")
@@ -115,7 +115,7 @@ def processCommand(command):
         speak(output)
 
 if __name__ == "__main__":
-    speak("Initializing Jarvis...")
+    speak("Initializing MAX...")
 
     while True:
         print("Recognizing...")
@@ -129,13 +129,13 @@ if __name__ == "__main__":
             word = recognizer.recognize_google(audio)
             print("You said:", word)
 
-            if word.lower() in ["jarvis", "hey jarvis"]:
+            if word.lower() in ["MAX", "hey max","hey MAX","max","hemax"]:
                 stop_speaking()  # Stop any ongoing speech
                 listening_for_command = True  # Set the flag to true
                 speak("Yes, what can I help you with?")
                 
                 with sr.Microphone() as source:
-                    print("Jarvis Active...")
+                    print("MAX Active...")
                     recognizer.adjust_for_ambient_noise(source)
                     audio = recognizer.listen(source)
                     command = recognizer.recognize_google(audio)
